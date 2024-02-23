@@ -1,0 +1,1140 @@
+{
+	"info": {
+		"_postman_id": "cfa965b2-0a7e-4534-9d7d-b28da4652114",
+		"name": "Treeleaf",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21007923",
+		"_collection_link": "https://planetary-moon-375891.postman.co/workspace/95393809-a82c-4e87-86f4-39f713952d3d/collection/21007923-cfa965b2-0a7e-4534-9d7d-b28da4652114?action=share&source=collection_link&creator=21007923"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"abc@gmail.com\",\n     \"password\":\"Okay@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/login"
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"abc@gmail.com\",\n     \"password\":\"Okay@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8080/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Feb 2024 00:18:44 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Logged in successfully.\",\n    \"token\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwiaWQiOiJiMjNkYTcxOS1kMmQ5LTQxZDYtOTY4My0xMDY5OWNiYjM4ZGUiLCJ1c2VyVHlwZSI6IlVTRVIiLCJ1c2VyTmFtZSI6ImFiY0BnbWFpbC5jb20iLCJleHAiOjE3MDg2NjU1MjQsImlhdCI6MTcwODY0NzUyNH0.8c5sy3IBYOColz-6Na2adhM5lJ0y20Cm69OKU83BQeizFVMMBZiwATrx5vAsTBVnbr7rJDGtJ4ykm9qc4ict5g\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"name\",\n    \"email\":\"abc@gmail.com\",\n    \"password\":\"Okay@123\",\n    \"confirmPassword\":\"Okay@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/register"
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"name\",\n    \"email\":\"abc@gmail.com\",\n    \"password\":\"Okay@123\",\n    \"confirmPassword\":\"Okay@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8080/register"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Feb 2024 00:13:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Signed Up Successfully.\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Blog",
+			"item": [
+				{
+					"name": "Create Blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwiaWQiOiJiMjNkYTcxOS1kMmQ5LTQxZDYtOTY4My0xMDY5OWNiYjM4ZGUiLCJ1c2VyVHlwZSI6IlVTRVIiLCJ1c2VyTmFtZSI6ImFiY0BnbWFpbC5jb20iLCJleHAiOjE3MDg2NjU1MjQsImlhdCI6MTcwODY0NzUyNH0.8c5sy3IBYOColz-6Na2adhM5lJ0y20Cm69OKU83BQeizFVMMBZiwATrx5vAsTBVnbr7rJDGtJ4ykm9qc4ict5g"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "title",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "content",
+									"type": "text"
+								},
+								{
+									"key": "imageFile",
+									"type": "file",
+									"src": "/home/kyrell/Pictures/Screenshots/Screenshot from 2023-12-07 14-55-28.png"
+								}
+							]
+						},
+						"url": "localhost:8080/createBlog"
+					},
+					"response": [
+						{
+							"name": "Create Blog",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "title",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "content",
+											"type": "text"
+										},
+										{
+											"key": "imageFile",
+											"type": "file",
+											"src": "/home/kyrell/Pictures/Screenshots/Screenshot from 2023-12-07 14-55-28.png"
+										}
+									]
+								},
+								"url": "localhost:8080/createBlog"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Feb 2024 00:21:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Blog post created successfully"
+						}
+					]
+				},
+				{
+					"name": "Get All Blogs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwiaWQiOiJiMjNkYTcxOS1kMmQ5LTQxZDYtOTY4My0xMDY5OWNiYjM4ZGUiLCJ1c2VyVHlwZSI6IlVTRVIiLCJ1c2VyTmFtZSI6ImFiY0BnbWFpbC5jb20iLCJleHAiOjE3MDg2NjU1MjQsImlhdCI6MTcwODY0NzUyNH0.8c5sy3IBYOColz-6Na2adhM5lJ0y20Cm69OKU83BQeizFVMMBZiwATrx5vAsTBVnbr7rJDGtJ4ykm9qc4ict5g"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/getAll"
+					},
+					"response": [
+						{
+							"name": "Get All Blogs",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "localhost:8080/getAll"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Feb 2024 00:41:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"updatedAt\": \"2024-02-23T00:41:01.721177\",\n        \"createdAt\": \"2024-02-23T00:21:46.8164\",\n        \"id\": \"f946eb8a-2948-4b66-8c18-0ea8b0445905\",\n        \"title\": \"Update\",\n        \"content\": \"content\",\n        \"image\": \"src/main/resources/Screenshot from 2023-12-07 14-55-28.png\",\n        \"user\": {\n            \"updatedAt\": \"2024-02-23T00:13:22.218104\",\n            \"createdAt\": \"2024-02-23T00:13:22.218104\",\n            \"id\": \"b23da719-d2d9-41d6-9683-10699cbb38de\",\n            \"name\": \"name\",\n            \"email\": \"abc@gmail.com\",\n            \"password\": \"8385VKtL7zgd9+zUVc1FTCExMZ74J7RiGP5IAR26leA=\",\n            \"group\": null,\n            \"active\": false\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Update Blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwiaWQiOiJiMjNkYTcxOS1kMmQ5LTQxZDYtOTY4My0xMDY5OWNiYjM4ZGUiLCJ1c2VyVHlwZSI6IlVTRVIiLCJ1c2VyTmFtZSI6ImFiY0BnbWFpbC5jb20iLCJleHAiOjE3MDg2NjU1MjQsImlhdCI6MTcwODY0NzUyNH0.8c5sy3IBYOColz-6Na2adhM5lJ0y20Cm69OKU83BQeizFVMMBZiwATrx5vAsTBVnbr7rJDGtJ4ykm9qc4ict5g"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/updateBlog?blogId=f946eb8a-2948-4b66-8c18-0ea8b0445905&title=Update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"updateBlog"
+							],
+							"query": [
+								{
+									"key": "blogId",
+									"value": "f946eb8a-2948-4b66-8c18-0ea8b0445905"
+								},
+								{
+									"key": "title",
+									"value": "Update"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Blog",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/updateBlog?blogId=f946eb8a-2948-4b66-8c18-0ea8b0445905&title=Update",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"updateBlog"
+									],
+									"query": [
+										{
+											"key": "blogId",
+											"value": "f946eb8a-2948-4b66-8c18-0ea8b0445905"
+										},
+										{
+											"key": "title",
+											"value": "Update"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Feb 2024 00:41:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Blog post updated successfully"
+						}
+					]
+				},
+				{
+					"name": "Delete Blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwiaWQiOiJiMjNkYTcxOS1kMmQ5LTQxZDYtOTY4My0xMDY5OWNiYjM4ZGUiLCJ1c2VyVHlwZSI6IlVTRVIiLCJ1c2VyTmFtZSI6ImFiY0BnbWFpbC5jb20iLCJleHAiOjE3MDg2NjU1MjQsImlhdCI6MTcwODY0NzUyNH0.8c5sy3IBYOColz-6Na2adhM5lJ0y20Cm69OKU83BQeizFVMMBZiwATrx5vAsTBVnbr7rJDGtJ4ykm9qc4ict5g"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/deleteBlog?blogId=f946eb8a-2948-4b66-8c18-0ea8b0445905",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deleteBlog"
+							],
+							"query": [
+								{
+									"key": "blogId",
+									"value": "f946eb8a-2948-4b66-8c18-0ea8b0445905"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Blog",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/deleteBlog?blogId=f946eb8a-2948-4b66-8c18-0ea8b0445905",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"deleteBlog"
+									],
+									"query": [
+										{
+											"key": "blogId",
+											"value": "f946eb8a-2948-4b66-8c18-0ea8b0445905"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Feb 2024 00:44:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Blog deleted successfully!!\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "Add comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwiaWQiOiJiMjNkYTcxOS1kMmQ5LTQxZDYtOTY4My0xMDY5OWNiYjM4ZGUiLCJ1c2VyVHlwZSI6IlVTRVIiLCJ1c2VyTmFtZSI6ImFiY0BnbWFpbC5jb20iLCJleHAiOjE3MDg2NjU1MjQsImlhdCI6MTcwODY0NzUyNH0.8c5sy3IBYOColz-6Na2adhM5lJ0y20Cm69OKU83BQeizFVMMBZiwATrx5vAsTBVnbr7rJDGtJ4ykm9qc4ict5g"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/comment/add?comment=comment&blogId=f946eb8a-2948-4b66-8c18-0ea8b0445905",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comment",
+								"add"
+							],
+							"query": [
+								{
+									"key": "comment",
+									"value": "comment"
+								},
+								{
+									"key": "blogId",
+									"value": "f946eb8a-2948-4b66-8c18-0ea8b0445905"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add comment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/comment/add?comment=comment&blogId=f946eb8a-2948-4b66-8c18-0ea8b0445905",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"comment",
+										"add"
+									],
+									"query": [
+										{
+											"key": "comment",
+											"value": "comment"
+										},
+										{
+											"key": "blogId",
+											"value": "f946eb8a-2948-4b66-8c18-0ea8b0445905"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Feb 2024 00:24:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Comment added to blog successfully!!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwiaWQiOiJiMjNkYTcxOS1kMmQ5LTQxZDYtOTY4My0xMDY5OWNiYjM4ZGUiLCJ1c2VyVHlwZSI6IlVTRVIiLCJ1c2VyTmFtZSI6ImFiY0BnbWFpbC5jb20iLCJleHAiOjE3MDg2NjU1MjQsImlhdCI6MTcwODY0NzUyNH0.8c5sy3IBYOColz-6Na2adhM5lJ0y20Cm69OKU83BQeizFVMMBZiwATrx5vAsTBVnbr7rJDGtJ4ykm9qc4ict5g"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/comment/get-all"
+					},
+					"response": [
+						{
+							"name": "Get Comment",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "localhost:8080/comment/get-all"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Feb 2024 00:45:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"updatedAt\": \"2024-02-23T00:24:33.99256\",\n        \"createdAt\": \"2024-02-23T00:24:33.99256\",\n        \"id\": \"8e9e7fc0-54c0-4191-80b9-a8f47e5edca2\",\n        \"comment\": \"comment\",\n        \"user\": {\n            \"updatedAt\": \"2024-02-23T00:13:22.218104\",\n            \"createdAt\": \"2024-02-23T00:13:22.218104\",\n            \"id\": \"b23da719-d2d9-41d6-9683-10699cbb38de\",\n            \"name\": \"name\",\n            \"email\": \"abc@gmail.com\",\n            \"password\": \"8385VKtL7zgd9+zUVc1FTCExMZ74J7RiGP5IAR26leA=\",\n            \"group\": null,\n            \"active\": false\n        },\n        \"blog\": {\n            \"updatedAt\": \"2024-02-23T00:44:40.510779\",\n            \"createdAt\": \"2024-02-23T00:21:46.8164\",\n            \"id\": \"f946eb8a-2948-4b66-8c18-0ea8b0445905\",\n            \"title\": \"Update\",\n            \"content\": \"content\",\n            \"image\": \"src/main/resources/Screenshot from 2023-12-07 14-55-28.png\",\n            \"user\": {\n                \"updatedAt\": \"2024-02-23T00:13:22.218104\",\n                \"createdAt\": \"2024-02-23T00:13:22.218104\",\n                \"id\": \"b23da719-d2d9-41d6-9683-10699cbb38de\",\n                \"name\": \"name\",\n                \"email\": \"abc@gmail.com\",\n                \"password\": \"8385VKtL7zgd9+zUVc1FTCExMZ74J7RiGP5IAR26leA=\",\n                \"group\": null,\n                \"active\": false\n            },\n            \"isDeleted\": true\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Update Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwiaWQiOiJiMjNkYTcxOS1kMmQ5LTQxZDYtOTY4My0xMDY5OWNiYjM4ZGUiLCJ1c2VyVHlwZSI6IlVTRVIiLCJ1c2VyTmFtZSI6ImFiY0BnbWFpbC5jb20iLCJleHAiOjE3MDg2NjU1MjQsImlhdCI6MTcwODY0NzUyNH0.8c5sy3IBYOColz-6Na2adhM5lJ0y20Cm69OKU83BQeizFVMMBZiwATrx5vAsTBVnbr7rJDGtJ4ykm9qc4ict5g"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/comment/update?comment=update&id=8e9e7fc0-54c0-4191-80b9-a8f47e5edca2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comment",
+								"update"
+							],
+							"query": [
+								{
+									"key": "comment",
+									"value": "update"
+								},
+								{
+									"key": "id",
+									"value": "8e9e7fc0-54c0-4191-80b9-a8f47e5edca2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Comment",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/comment/update?comment=update&id=8e9e7fc0-54c0-4191-80b9-a8f47e5edca2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"comment",
+										"update"
+									],
+									"query": [
+										{
+											"key": "comment",
+											"value": "update"
+										},
+										{
+											"key": "id",
+											"value": "8e9e7fc0-54c0-4191-80b9-a8f47e5edca2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Feb 2024 00:46:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Comment updated successfully!!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwiaWQiOiJiMjNkYTcxOS1kMmQ5LTQxZDYtOTY4My0xMDY5OWNiYjM4ZGUiLCJ1c2VyVHlwZSI6IlVTRVIiLCJ1c2VyTmFtZSI6ImFiY0BnbWFpbC5jb20iLCJleHAiOjE3MDg2NjU1MjQsImlhdCI6MTcwODY0NzUyNH0.8c5sy3IBYOColz-6Na2adhM5lJ0y20Cm69OKU83BQeizFVMMBZiwATrx5vAsTBVnbr7rJDGtJ4ykm9qc4ict5g"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/comment/delete?id=8e9e7fc0-54c0-4191-80b9-a8f47e5edca2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comment",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8e9e7fc0-54c0-4191-80b9-a8f47e5edca2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Comment",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/comment/delete?id=8e9e7fc0-54c0-4191-80b9-a8f47e5edca2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"comment",
+										"delete"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "8e9e7fc0-54c0-4191-80b9-a8f47e5edca2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Feb 2024 00:50:06 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Comment deleted successfully!!\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
